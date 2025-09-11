@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Garagge Hamburgueria — Cardápio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+       <div class="logo">
+  <img src="img/logo-1.png" alt="Garagge Hamburgueria">
+</div>
+
+        <div>
+          <h1>Léo Burger</h1>
+          <div class="muted">Cardápio digital & Entrega</div>
+        </div>
+      </div>
+
+     <div class="controls">
+  <button id="openCart" class="btn cart-btn">Carrinho<span id="cartCount" class="cart-count" style="display:none">0</span></button>
+</div>
+
+    </header>
+
+    <section class="filters" id="filters">
+      <button class="chip active" data-cat="all">Todos</button>
+      <button class="chip" data-cat="classicos">Clássicos</button>
+      <button class="chip" data-cat="bacon">Bacon</button>
+      <button class="chip" data-cat="Cheddar">Cheddar</button>
+      <button class="chip" data-cat="promo">Promoção</button>
+    </section>
+
+    <main id="productArea">
+      <div id="grid" class="grid"></div>
+      <div id="nores" class="empty" style="display:none">Nenhum produto encontrado.</div>
+    </main>
+
+    <footer>
+      <div>Imagens Ilustrativas!©Dev|misael<code>|@iykmisa</code>.</div>
+    </footer>
+  </div>
+
+  <!-- cart drawer -->
+  <aside id="drawer" class="drawer hidden" aria-hidden="true">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <strong>Seu pedido</strong>
+      <button id="closeDrawer" class="btn">Fechar</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="total"><div>Total</div><div id="cartTotal">R$ 0,00</div></div>
+    <div style="display:flex;gap:8px;justify-content:flex-end">
+      <button id="clearCart" class="btn">Limpar</button>
+      <button id="checkoutBtn" class="btn primary">Finalizar pedido</button>
+    </div>
+  </aside>
+
+  <!-- product modal -->
+  <div id="overlay" class="overlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <strong id="modalTitle"></strong>
+        <button id="closeModal" class="btn">X</button>
+      </div>
+      <img id="modalImg" src="" alt="" style="width:100%;height:280px;object-fit:cover;border-radius:10px;margin-bottom:10px"/>
+      <div id="modalDesc" class="desc muted"></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+        <div class="price" id="modalPrice">R$ 0,00</div>
+        <div style="display:flex;gap:8px">
+          <input id="modalQty" type="number" min="1" value="1" style="width:64px;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04)" />
+          <button id="addModalCart" class="btn primary">Adicionar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
