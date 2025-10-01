@@ -1,6 +1,6 @@
 # SousaaTechMDS - Site de Cardápio Digital
 
-Projeto desenvolvido por Misael Sousa com a marca SousaaTechMDS, um site de cardápio digital pensado para restaurantes, lanchonetes e negócios de alimentação. O objetivo é modernizar o atendimento, permitindo que clientes visualizem produtos, adicionem ao carrinho e acompanhem pedidos de forma prática e intuitiva.
+Projeto desenvolvido por mim com a marca SousaaTechMDS, um site de cardápio digital pensado para restaurantes, lanchonetes e negócios de alimentação. O objetivo é modernizar o atendimento, permitindo que clientes visualizem produtos, adicionem ao carrinho e acompanhem pedidos de forma prática e intuitiva.
 
 # Funcionalidades
 
